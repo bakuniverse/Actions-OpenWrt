@@ -10,10 +10,9 @@ name: n1 OpenWrt
 
 on:
   release:
-    types: [published]
+    types: [ published ]
   push:
-    branches:
-      - dev-19.07
+    branches: [ dev-19.07 ]
     paths:
       - '.config'
 #  schedule:
