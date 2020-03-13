@@ -10,7 +10,7 @@ name: n1 OpenWrt
 
 on:
   release:
-    types: published
+    types: [published]
   push:
     branches:
       - dev-19.07
@@ -18,8 +18,8 @@ on:
       - '.config'
 #  schedule:
 #    - cron: 0 8 * * 5
-#  watch:
-#    types: started
+  watch:
+    types: [started]
 
 env:
   REPO_URL: https://github.com/Lienol/openwrt
